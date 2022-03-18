@@ -1,0 +1,49 @@
+{
+  "name": "book",
+  "plural": "books",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "idioma": {
+      "type": "string",
+      "required": true,
+      "default": "Ingles"
+    },
+    "description": {
+      "type": "string",
+      "required": true
+    },
+    "portada": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "string",
+      "required": true
+    },
+    "limk_amazon": {
+      "type": "string",
+      "required": true
+    },
+    "autor": {
+      "type": "string",
+      "required": true
+    },
+    "oferta": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
