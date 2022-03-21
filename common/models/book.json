@@ -11,7 +11,6 @@
             "type": "string",
             "required": true
         },
-
         "precio": {
             "type": "number",
             "required": true
@@ -19,6 +18,11 @@
     },
     "validations": [],
     "relations": {},
-    "acls": [],
+    "acls": [{
+        "accessType": "*",
+        "principalType": "ROLE",
+        "principalId": "$unauthenticated",
+        "permission": "DENY"
+    }],
     "methods": {}
 }

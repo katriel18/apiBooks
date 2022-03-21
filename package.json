@@ -1,35 +1,43 @@
 {
-    "name": "apibooks",
-    "version": "1.0.0",
-    "main": "server/server.js",
-    "engines": {
-        "node": ">=6"
-    },
-    "scripts": {
-        "lint": "eslint .",
-        "start": "node .",
-        "dev": "nodemon .",
-        "posttest": "npm run lint"
-    },
-    "dependencies": {
-        "compression": "^1.0.3",
-        "cors": "^2.5.2",
-        "helmet": "^3.10.0",
-        "loopback-boot": "^2.6.5",
-        "serve-favicon": "^2.0.1",
-        "strong-error-handler": "^4.0.0",
-        "loopback-component-explorer": "^6.2.0",
-        "loopback": "^3.22.0"
-    },
-    "devDependencies": {
-        "eslint": "^3.17.1",
-        "eslint-config-loopback": "^8.0.0",
-        "nodemon": "^2.0.15"
-    },
-    "repository": {
-        "type": "",
-        "url": ""
-    },
-    "license": "UNLICENSED",
-    "description": "apiBooks"
+  "name": "apibooks",
+  "version": "1.0.0",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=6"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "start": "node .",
+    "dev": "nodemon .",
+    "posttest": "npm run lint"
+  },
+  "dependencies": {
+    "compression": "^1.0.3",
+    "connect-ensure-login": "^0.1.1",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.5.2",
+    "express-flash": "0.0.2",
+    "express-session": "^1.17.2",
+    "helmet": "^3.10.0",
+    "jade": "^1.11.0",
+    "loopback": "^3.22.0",
+    "loopback-boot": "^2.6.5",
+    "loopback-component-explorer": "^6.2.0",
+    "loopback-component-passport": "^3.12.0",
+    "passport": "^0.5.2",
+    "passport-facebook": "^3.0.0",
+    "serve-favicon": "^2.0.1",
+    "strong-error-handler": "^4.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.17.1",
+    "eslint-config-loopback": "^8.0.0",
+    "nodemon": "^2.0.15"
+  },
+  "repository": {
+    "type": "",
+    "url": ""
+  },
+  "license": "UNLICENSED",
+  "description": "apiBooks"
 }
